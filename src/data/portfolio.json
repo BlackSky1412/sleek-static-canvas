@@ -18,16 +18,26 @@
   },
   "skills": {
     "title": "Skills",
-    "description": "I've developed expertise in various frontend technologies, with a focus on creating responsive and accessible web applications.",
+    "description": "I've developed expertise in various technologies, with a focus on creating responsive and accessible web applications.",
     "technical": [
-      { "name": "HTML5", "level": 95 },
-      { "name": "CSS3/SCSS", "level": 90 },
-      { "name": "JavaScript (ES6+)", "level": 85 },
-      { "name": "React", "level": 88 },
-      { "name": "TypeScript", "level": 80 },
-      { "name": "Responsive Design", "level": 95 },
-      { "name": "UI/UX Fundamentals", "level": 85 },
-      { "name": "Git/GitHub", "level": 85 }
+      { "name": "MySQL", "level": 3, "category": "Database" },
+      { "name": "MongoDB", "level": 4, "category": "Database" },
+      { "name": "PostgreSQL", "level": 2, "category": "Database" },
+      
+      { "name": "Node.js", "level": 4, "category": "Backend" },
+      { "name": "Express", "level": 4, "category": "Backend" },
+      { "name": "Python", "level": 3, "category": "Backend" },
+      { "name": "Java", "level": 2, "category": "Backend" },
+      
+      { "name": "HTML5", "level": 5, "category": "Frontend" },
+      { "name": "CSS3/SCSS", "level": 5, "category": "Frontend" },
+      { "name": "JavaScript (ES6+)", "level": 4, "category": "Frontend" },
+      { "name": "React", "level": 4, "category": "Frontend" },
+      { "name": "TypeScript", "level": 4, "category": "Frontend" },
+      
+      { "name": "Git/GitHub", "level": 4, "category": "Other" },
+      { "name": "UI/UX Fundamentals", "level": 4, "category": "Other" },
+      { "name": "Responsive Design", "level": 5, "category": "Other" }
     ],
     "soft": [
       "Problem Solving",

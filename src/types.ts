@@ -15,6 +15,7 @@ export interface CareerGoalsData {
 export interface TechnicalSkill {
   name: string;
   level: number;
+  category: 'Database' | 'Backend' | 'Frontend' | 'Other';
 }
 
 export interface SkillsData {
