@@ -1,73 +1,128 @@
-# Welcome to your Lovable project
 
-## Project info
+# JSON-Driven Portfolio Website
 
-**URL**: https://lovable.dev/projects/f06d2113-fc24-49d4-ac6d-f4ff22ab4f2f
+A clean, modern, and fully customizable portfolio website that loads all content from a single JSON file. Perfect for developers who want to showcase their work without constantly editing HTML.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **JSON-Driven Content**: All content is loaded from a single JSON file
+- **Responsive Design**: Looks great on all devices
+- **Modern Aesthetics**: Clean design with neutral tones and subtle animations
+- **Easy to Customize**: Just edit the JSON file to update your portfolio
+- **Section-Based Layout**: Including hero, skills, projects, and contact sections
 
-**Use Lovable**
+## How to Customize Your Portfolio
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f06d2113-fc24-49d4-ac6d-f4ff22ab4f2f) and start prompting.
+To customize your portfolio, simply edit the `src/data/portfolio.json` file. Here's how to modify each section:
 
-Changes made via Lovable will be committed automatically to this repo.
+### Profile Section
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```json
+"profile": {
+  "name": "Your Name",
+  "role": "Your Job Title",
+  "avatar": "/src/assets/your-avatar.jpg",
+  "bio": "Your short bio goes here..."
+}
 ```
 
-**Edit a file directly in GitHub**
+### Career Goals
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```json
+"careerGoals": {
+  "title": "Career Goals",
+  "description": "A paragraph describing your career aspirations...",
+  "goals": [
+    "Goal 1",
+    "Goal 2",
+    "Goal 3",
+    "Goal 4"
+  ]
+}
+```
 
-**Use GitHub Codespaces**
+### Skills
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```json
+"skills": {
+  "title": "Skills",
+  "description": "Description of your skills...",
+  "technical": [
+    { "name": "Skill Name", "level": 85 },
+    { "name": "Another Skill", "level": 90 }
+  ],
+  "soft": [
+    "Soft Skill 1",
+    "Soft Skill 2"
+  ]
+}
+```
 
-## What technologies are used for this project?
+For technical skills, the "level" property should be a number from 0-100 representing your proficiency.
 
-This project is built with:
+### Projects
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```json
+"projects": {
+  "title": "Projects",
+  "description": "Description of your projects section...",
+  "items": [
+    {
+      "title": "Project Title",
+      "description": "Project description...",
+      "technologies": ["Tech 1", "Tech 2"],
+      "role": "Your role in the project",
+      "github": "https://github.com/yourusername/project",
+      "image": "/src/assets/projects/project-image.jpg"
+    }
+  ]
+}
+```
 
-## How can I deploy this project?
+Add as many projects as you want by adding more objects to the "items" array.
 
-Simply open [Lovable](https://lovable.dev/projects/f06d2113-fc24-49d4-ac6d-f4ff22ab4f2f) and click on Share -> Publish.
+### Contact Information
 
-## Can I connect a custom domain to my Lovable project?
+```json
+"contact": {
+  "title": "Contact",
+  "description": "Contact section description...",
+  "email": "your.email@example.com",
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/yourusername",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/yourusername",
+      "icon": "github"
+    }
+  ]
+}
+```
 
-Yes it is!
+## Adding Custom Images
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Place your avatar image in `/src/assets/` 
+2. Place project images in `/src/assets/projects/`
+3. Update the corresponding paths in the JSON file
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Customizing Colors and Fonts
+
+To change colors or fonts, edit the `src/index.css` file. The main color variables are:
+
+- `--portfolio-background`: Background color
+- `--portfolio-foreground`: Text color
+- `--portfolio-primary`: Primary color (deep blue by default)
+- `--portfolio-accent`: Accent color (teal by default)
+- `--portfolio-muted`: Background for alternate sections
+
+## Deployment
+
+This project can be deployed to any static hosting service like GitHub Pages, Netlify, or Vercel.
+
+## License
+
+This project is open source and available under the MIT License.

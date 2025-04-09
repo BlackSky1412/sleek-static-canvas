@@ -1,0 +1,92 @@
+
+{
+  "profile": {
+    "name": "Alex Johnson",
+    "role": "Frontend Developer",
+    "avatar": "/src/assets/avatar.jpg",
+    "bio": "Passionate web developer with a keen eye for design and a love for creating seamless user experiences. I specialize in building responsive, accessible, and performant web applications."
+  },
+  "careerGoals": {
+    "title": "Career Goals",
+    "description": "I'm focused on mastering modern web technologies and growing into a senior frontend role. I aim to contribute to open source projects, mentor junior developers, and eventually lead development teams building products that make a positive impact.",
+    "goals": [
+      "Become a senior frontend developer within the next 2 years",
+      "Master React ecosystem and related technologies",
+      "Contribute to major open source projects",
+      "Speak at tech conferences and share knowledge"
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "I've developed expertise in various frontend technologies, with a focus on creating responsive and accessible web applications.",
+    "technical": [
+      { "name": "HTML5", "level": 95 },
+      { "name": "CSS3/SCSS", "level": 90 },
+      { "name": "JavaScript (ES6+)", "level": 85 },
+      { "name": "React", "level": 88 },
+      { "name": "TypeScript", "level": 80 },
+      { "name": "Responsive Design", "level": 95 },
+      { "name": "UI/UX Fundamentals", "level": 85 },
+      { "name": "Git/GitHub", "level": 85 }
+    ],
+    "soft": [
+      "Problem Solving",
+      "Communication",
+      "Team Collaboration",
+      "Time Management",
+      "Adaptability"
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of the projects I've worked on. Each one has helped me grow as a developer.",
+    "items": [
+      {
+        "title": "E-commerce Platform",
+        "description": "A full-featured online shopping platform with product catalog, shopping cart, and checkout functionality.",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
+        "role": "Lead Frontend Developer",
+        "github": "https://github.com/alexjohnson/ecommerce-platform",
+        "image": "/src/assets/projects/ecommerce.jpg"
+      },
+      {
+        "title": "Task Management App",
+        "description": "A Kanban-style task management application with drag-and-drop functionality and team collaboration features.",
+        "technologies": ["React", "TypeScript", "Firebase", "Tailwind CSS"],
+        "role": "Frontend Developer",
+        "github": "https://github.com/alexjohnson/task-app",
+        "image": "/src/assets/projects/taskapp.jpg"
+      },
+      {
+        "title": "Weather Dashboard",
+        "description": "A responsive weather application that provides real-time weather data and forecasts for cities worldwide.",
+        "technologies": ["JavaScript", "Weather API", "Charts.js", "CSS Grid"],
+        "role": "Solo Developer",
+        "github": "https://github.com/alexjohnson/weather-dashboard",
+        "image": "/src/assets/projects/weather.jpg"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Feel free to reach out if you'd like to collaborate, have questions, or just want to say hi!",
+    "email": "alex.johnson@example.com",
+    "socials": [
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/alexjohnson",
+        "icon": "linkedin"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/alexjohnson",
+        "icon": "github"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/alexjohnson",
+        "icon": "twitter"
+      }
+    ]
+  }
+}
