@@ -1,3 +1,4 @@
+
 {
   "profile": {
     "name": "Trần Công Mạnh",
@@ -28,14 +29,14 @@
       { "name": "C#", "level": 3, "category": "Backend" },
       { "name": "Java", "level": 3, "category": "Backend" },
       
-      { "name": "HTML5", "level": 22, "category": "Frontend" },
-      { "name": "CSS", "level": 22, "category": "Frontend" },
-      { "name": "JavaScript ", "level": 1, "category": "Frontend" },
+      { "name": "HTML5", "level": 5, "category": "Frontend" },
+      { "name": "CSS", "level": 5, "category": "Frontend" },
+      { "name": "JavaScript ", "level": 4, "category": "Frontend" },
       
-      { "name": "Git/GitHub", "level": 2, "category": "Other" },
-      { "name": "Microservice", "level": 1, "category": "Other" },
-      { "name": "kubernetes", "level": 1, "category": "Other" },
-      { "name": "Docker", "level": 1, "category": "Other" }
+      { "name": "Git/GitHub", "level": 4, "category": "Other" },
+      { "name": "Microservice", "level": 4, "category": "Other" },
+      { "name": "kubernetes", "level": 5, "category": "Other" },
+      { "name": "Docker", "level": 5, "category": "Other" }
     ],
     "soft": [
       "Problem Solving",
@@ -45,107 +46,55 @@
       "Adaptability"
     ]
   },
-  "timeline": {
-    "title": "Experience Timeline",
-    "description": "My professional journey and the companies I've worked with.",
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of the projects I've worked on. Each one has helped me grow as a developer.",
     "items": [
       {
-        "period": "2024",
-        "startDate": "April 2024",
-        "endDate": "June 2024",
-        "title": "Technical Support Intern",
-        "organization": "HQSOFT - Distribution & Retail Solution Expert",
-        "description": "Collected requirements and developed functions and stored procedures in SQL Server to retrieve data for reporting using Stimulsoft.",
-        "technologies": ["Stimulsoft", "SQL Server"]
-      },      
+        "title": "E-commerce Platform",
+        "description": "A full-featured online shopping platform with product catalog, shopping cart, and checkout functionality.",
+        "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
+        "role": "Lead Frontend Developer",
+        "github": "https://github.com/alexjohnson/ecommerce-platform",
+        "image": "/src/assets/projects/ecommerce.jpg"
+      },
       {
-        "period": "2020 - 2024",
-        "startDate": "August 2020",
-        "endDate": "August 2024",
-        "title": "Bachelor's Degree",
-        "organization": "Ho Chi Minh City University of Technology",
-        "description": "Studied Information Technology with a major in Information Systems"
-      }      
+        "title": "Task Management App",
+        "description": "A Kanban-style task management application with drag-and-drop functionality and team collaboration features.",
+        "technologies": ["React", "TypeScript", "Firebase", "Tailwind CSS"],
+        "role": "Frontend Developer",
+        "github": "https://github.com/alexjohnson/task-app",
+        "image": "/src/assets/projects/taskapp.jpg"
+      },
+      {
+        "title": "Weather Dashboard",
+        "description": "A responsive weather application that provides real-time weather data and forecasts for cities worldwide.",
+        "technologies": ["JavaScript", "Weather API", "Charts.js", "CSS Grid"],
+        "role": "Solo Developer",
+        "github": "https://github.com/alexjohnson/weather-dashboard",
+        "image": "/src/assets/projects/weather.jpg"
+      }
     ]
-  },
-  "projects": {
-    "completed": {
-      "title": "Projects I've Completed",
-      "description": "Here are some of the projects I've worked on. Each one has helped me grow as a developer.",
-      "items": [
-        {
-          "title": "E-commerce Platform",
-          "description": "A full-featured online shopping platform with product catalog, shopping cart, and checkout functionality.",
-          "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
-          "role": "Lead Frontend Developer",
-          "github": "https://github.com/alexjohnson/ecommerce-platform",
-          "image": "/src/assets/projects/ecommerce.jpg"
-        },
-        {
-          "title": "Task Management App",
-          "description": "A Kanban-style task management application with drag-and-drop functionality and team collaboration features.",
-          "technologies": ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-          "role": "Frontend Developer",
-          "github": "https://github.com/alexjohnson/task-app",
-          "image": "/src/assets/projects/taskapp.jpg"
-        },
-        {
-          "title": "Weather Dashboard",
-          "description": "A responsive weather application that provides real-time weather data and forecasts for cities worldwide.",
-          "technologies": ["JavaScript", "Weather API", "Charts.js", "CSS Grid"],
-          "role": "Solo Developer",
-          "github": "https://github.com/alexjohnson/weather-dashboard",
-          "image": "/src/assets/projects/weather.jpg"
-        }
-      ]
-    },
-    "inProgress": {
-      "title": "Projects I'm Working On",
-      "description": "These are projects I’m currently developing to sharpen my skills and explore new technologies.",
-      "items": [
-        {
-          "title": "Music Streaming App",
-          "description": "A cross-platform music player app allowing users to stream, browse, and manage playlists with a modern and intuitive interface.",
-          "technologies": ["Flutter", "Spring Boot", "MySQL", "Firebase Storage"],
-          "role": "Fullstack Developer",
-          "github": "https://github.com/blacksky1412/music-app",
-          "image": "/src/assets/projects/music-app.jpg"
-        },
-        {
-          "title": "TikTok Clone App",
-          "description": "A social video-sharing app clone with features like video upload, playback, likes, and comments.",
-          "technologies": ["Flutter", "Firebase", "FFmpeg"],
-          "role": "Mobile Developer",
-          "github": "",
-          "image": "/src/assets/projects/tiktok-clone.jpg"
-        }
-      ]
-    }
   },
   "contact": {
     "title": "Contact",
     "description": "Feel free to reach out if you'd like to collaborate, have questions, or just want to say hi!",
-    "email": "tranmanhtran011102@gmail.com",
+    "email": "alex.johnson@example.com",
     "socials": [
       {
-        "name": "Facebook",
-        "url": "https://www.facebook.com/HaCongManh1412/",
-        "icon": "facebook"
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/alexjohnson",
+        "icon": "linkedin"
       },
       {
         "name": "GitHub",
-        "url": "https://github.com/blacksky1412",
+        "url": "https://github.com/alexjohnson",
         "icon": "github"
       },
       {
-        "name": "Zalo",
-        "url": "https://zalo.me/0979741214",
-        "icon": "zalo"
-      },
-      {
-        "name": "Tiktok",
-        "url": "",
-        "icon": "tiktok"
+        "name": "Twitter",
+        "url": "https://twitter.com/alexjohnson",
+        "icon": "twitter"
       }
     ]
   }
