@@ -1,43 +1,42 @@
 
 {
   "profile": {
-    "name": "Alex Johnson",
-    "role": "Frontend Developer",
+    "name": "Trần Công MạnhMạnh",
+    "role": "BackEndBackEnd Developer",
     "avatar": "/src/assets/avatar.jpg",
-    "bio": "Passionate web developer with a keen eye for design and a love for creating seamless user experiences. I specialize in building responsive, accessible, and performant web applications."
+    "bio": "Passionate backend developer with a strong systems mindset and a focus on performance. I enjoy building stable, scalable, and efficient applications. Specializing in backend development, databases, and infrastructure, I strive to create seamless experiences for both users and systems."
   },
   "careerGoals": {
     "title": "Career Goals",
     "description": "I'm focused on mastering modern web technologies and growing into a senior frontend role. I aim to contribute to open source projects, mentor junior developers, and eventually lead development teams building products that make a positive impact.",
     "goals": [
-      "Become a senior frontend developer within the next 2 years",
-      "Master React ecosystem and related technologies",
+      "Become a senior backend developer within the next 5 years",
+      "Master the Spring ecosystem and related technologies",
       "Contribute to major open source projects",
-      "Speak at tech conferences and share knowledge"
-    ]
+      "Build and launch my own product"
+    ]    
   },
   "skills": {
     "title": "Skills",
     "description": "I've developed expertise in various technologies, with a focus on creating responsive and accessible web applications.",
     "technical": [
       { "name": "MySQL", "level": 3, "category": "Database" },
-      { "name": "MongoDB", "level": 4, "category": "Database" },
-      { "name": "PostgreSQL", "level": 2, "category": "Database" },
+      { "name": "MongoDB", "level": 1, "category": "Database" },
+      { "name": "Oracle", "level": 2, "category": "Database" },
       
-      { "name": "Node.js", "level": 4, "category": "Backend" },
-      { "name": "Express", "level": 4, "category": "Backend" },
-      { "name": "Python", "level": 3, "category": "Backend" },
-      { "name": "Java", "level": 2, "category": "Backend" },
+      { "name": "Spring boot", "level": 3, "category": "Backend" },
+      { "name": "ASP", "level": 2, "category": "Backend" },
+      { "name": "C#", "level": 3, "category": "Backend" },
+      { "name": "Java", "level": 3, "category": "Backend" },
       
       { "name": "HTML5", "level": 5, "category": "Frontend" },
-      { "name": "CSS3/SCSS", "level": 5, "category": "Frontend" },
-      { "name": "JavaScript (ES6+)", "level": 4, "category": "Frontend" },
-      { "name": "React", "level": 4, "category": "Frontend" },
-      { "name": "TypeScript", "level": 4, "category": "Frontend" },
+      { "name": "CSS", "level": 5, "category": "Frontend" },
+      { "name": "JavaScript ", "level": 4, "category": "Frontend" },
       
       { "name": "Git/GitHub", "level": 4, "category": "Other" },
-      { "name": "UI/UX Fundamentals", "level": 4, "category": "Other" },
-      { "name": "Responsive Design", "level": 5, "category": "Other" }
+      { "name": "Microservice", "level": 4, "category": "Other" },
+      { "name": "kubernetes", "level": 5, "category": "Other" },
+      { "name": "Docker", "level": 5, "category": "Other" }
     ],
     "soft": [
       "Problem Solving",
