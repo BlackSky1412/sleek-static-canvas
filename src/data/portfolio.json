@@ -46,6 +46,33 @@
       "Adaptability"
     ]
   },
+  "timeline": {
+    "title": "Experience Timeline",
+    "description": "My professional journey and the companies I've worked with.",
+    "items": [
+      {
+        "period": "2021 - Present",
+        "title": "Senior Backend Developer",
+        "organization": "TechVision Corporation",
+        "description": "Leading the backend team in developing and maintaining microservices architecture for enterprise solutions.",
+        "technologies": ["Java", "Spring Boot", "Kubernetes", "MySQL", "Docker"]
+      },
+      {
+        "period": "2018 - 2021",
+        "title": "Backend Developer",
+        "organization": "DataSphere Solutions",
+        "description": "Designed and implemented RESTful APIs and database schemas for data-intensive applications.",
+        "technologies": ["C#", "ASP.NET", "SQL Server", "MongoDB"]
+      },
+      {
+        "period": "2016 - 2018",
+        "title": "Junior Developer",
+        "organization": "CodeCraft Systems",
+        "description": "Worked on full-stack development with a focus on backend services and database optimizations.",
+        "technologies": ["Java", "JavaScript", "Oracle", "HTML/CSS"]
+      }
+    ]
+  },
   "projects": {
     "title": "Projects",
     "description": "Here are some of the projects I've worked on. Each one has helped me grow as a developer.",

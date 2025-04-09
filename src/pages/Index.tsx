@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import GoalsSection from '../components/GoalsSection';
 import SkillsSection from '../components/SkillsSection';
+import TimelineSection from '../components/TimelineSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
@@ -44,6 +45,7 @@ const Index = () => {
         <HeroSection profile={portfolioData.profile} />
         <GoalsSection careerGoals={portfolioData.careerGoals} />
         <SkillsSection skills={portfolioData.skills} />
+        <TimelineSection timeline={portfolioData.timeline} />
         <ProjectsSection projects={portfolioData.projects} />
         <ContactSection contact={portfolioData.contact} />
       </main>

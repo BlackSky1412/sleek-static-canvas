@@ -40,6 +40,20 @@ export interface ProjectsData {
   items: Project[];
 }
 
+export interface TimelineItem {
+  period: string;
+  title: string;
+  organization: string;
+  description: string;
+  technologies?: string[];
+}
+
+export interface TimelineData {
+  title: string;
+  description: string;
+  items: TimelineItem[];
+}
+
 export interface Social {
   name: string;
   url: string;
@@ -57,6 +71,7 @@ export interface PortfolioData {
   profile: ProfileData;
   careerGoals: CareerGoalsData;
   skills: SkillsData;
+  timeline: TimelineData;
   projects: ProjectsData;
   contact: ContactData;
 }

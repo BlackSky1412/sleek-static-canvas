@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ProfileData } from '../types';
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 interface HeroSectionProps {
   profile: ProfileData;
@@ -33,11 +34,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ profile }) => {
           <div className="md:w-2/5 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <div className="relative">
               <div className="w-64 h-64 mx-auto overflow-hidden rounded-full border-4 border-portfolio-accent">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3"
-                  alt={`${profile.name}'s profile picture`}
-                  className="w-full h-full object-cover"
-                />
+                <Avatar className="w-full h-full">
+                  <AvatarImage src={profile.avatar} alt={`${profile.name}'s profile picture`} className="w-full h-full object-cover" />
+                  <AvatarFallback>{profile.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                </Avatar>
               </div>
               <div className="absolute -bottom-4 -right-4 bg-portfolio-accent text-portfolio-primary px-4 py-2 rounded-md font-medium">
                 {profile.role}
