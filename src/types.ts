@@ -42,6 +42,8 @@ export interface ProjectsData {
 
 export interface TimelineItem {
   period: string;
+  startDate?: string; // Add optional detailed date information
+  endDate?: string;   // Add optional detailed date information
   title: string;
   organization: string;
   description: string;

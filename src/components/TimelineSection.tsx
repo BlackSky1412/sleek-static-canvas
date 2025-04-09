@@ -26,8 +26,15 @@ const TimelineSection: React.FC<TimelineSectionProps> = ({ timeline }) => {
               {/* Content positioning - alternating left and right */}
               <div className={`md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right md:self-end' : 'md:pl-12 md:ml-auto'}`}>
                 <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
-                  <div className="inline-block px-3 py-1 mb-4 text-xs font-medium text-white bg-portfolio-primary rounded-full">
-                    {item.period}
+                  <div className="flex flex-col mb-4">
+                    <div className="inline-block px-3 py-1 mb-2 text-xs font-medium text-white bg-portfolio-primary rounded-full">
+                      {item.period}
+                    </div>
+                    {(item.startDate || item.endDate) && (
+                      <div className="text-sm text-gray-500 italic">
+                        {item.startDate} - {item.endDate}
+                      </div>
+                    )}
                   </div>
                   <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                   <h4 className="text-portfolio-accent font-medium mb-3">{item.organization}</h4>

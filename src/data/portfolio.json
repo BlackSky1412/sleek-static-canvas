@@ -52,6 +52,8 @@
     "items": [
       {
         "period": "2021 - Present",
+        "startDate": "May 2021",
+        "endDate": "Present",
         "title": "Senior Backend Developer",
         "organization": "TechVision Corporation",
         "description": "Leading the backend team in developing and maintaining microservices architecture for enterprise solutions.",
@@ -59,6 +61,8 @@
       },
       {
         "period": "2018 - 2021",
+        "startDate": "January 2018",
+        "endDate": "April 2021",
         "title": "Backend Developer",
         "organization": "DataSphere Solutions",
         "description": "Designed and implemented RESTful APIs and database schemas for data-intensive applications.",
@@ -66,6 +70,8 @@
       },
       {
         "period": "2016 - 2018",
+        "startDate": "June 2016",
+        "endDate": "December 2018",
         "title": "Junior Developer",
         "organization": "CodeCraft Systems",
         "description": "Worked on full-stack development with a focus on backend services and database optimizations.",
