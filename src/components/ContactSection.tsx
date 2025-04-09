@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ContactData } from '../types';
+import { Mail, MapPin, ExternalLink } from 'lucide-react';
 
 interface ContactSectionProps {
   contact: ContactData;
@@ -41,71 +42,71 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contact }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-6">Get in Touch</h3>
-            <div className="flex items-center mb-4 animate-fade-in">
-              <div className="bg-portfolio-accent rounded-full p-3 mr-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-portfolio-primary">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
+            <div className="flex flex-col space-y-6">
+              {/* Email Contact Info */}
+              <div className="flex items-center mb-4 animate-fade-in">
+                <div className="bg-portfolio-accent rounded-full p-3 mr-4">
+                  <Mail className="h-6 w-6 text-portfolio-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500">Email</p>
+                  <a href={`mailto:${contact.email}`} className="text-portfolio-primary hover:text-portfolio-accent font-medium">
+                    {contact.email}
+                  </a>
+                </div>
               </div>
+              
+              {/* Social Links */}
               <div>
-                <p className="text-sm text-gray-500">Email</p>
-                <a href={`mailto:${contact.email}`} className="text-portfolio-primary hover:text-portfolio-accent font-medium">
-                  {contact.email}
-                </a>
+                <h4 className="text-lg font-medium mb-4">Connect on Social Media</h4>
+                <div className="flex flex-col space-y-4">
+                  {contact.socials.map((social, index) => (
+                    <a 
+                      key={index} 
+                      href={social.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center text-gray-700 hover:text-portfolio-primary transition-colors animate-fade-in"
+                      style={{ animationDelay: `${index * 0.1}s` }}
+                    >
+                      <div className="bg-gray-100 rounded-full p-2 mr-3">
+                        {renderIcon(social.icon)}
+                      </div>
+                      <span>{social.name}</span>
+                      <ExternalLink className="h-4 w-4 ml-2" />
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-            
-            <h4 className="text-lg font-medium mb-4 mt-8">Follow me</h4>
-            <div className="flex space-x-4">
-              {contact.socials.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link animate-fade-in"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {renderIcon(social.icon)}
-                </a>
-              ))}
             </div>
           </div>
           
           <div className="bg-portfolio-primary rounded-lg shadow-md p-8 text-white">
-            <h3 className="text-xl font-semibold mb-6">Send a Message</h3>
-            <form className="space-y-4">
-              <div>
-                <label className="block mb-2 text-sm">Name</label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-portfolio-accent text-white"
-                  placeholder="Your name"
-                />
+            <h3 className="text-xl font-semibold mb-6">Portfolio Information</h3>
+            <div className="space-y-6">
+              <p className="mb-4">
+                This is a static portfolio website. To contact me, please use the email address or social media links provided.
+              </p>
+              
+              <div className="bg-white/10 p-4 rounded-lg">
+                <h4 className="text-lg font-medium mb-2">Need a quick response?</h4>
+                <p className="mb-4">The best way to reach me is through:</p>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>Email for professional inquiries</li>
+                  <li>LinkedIn for networking</li>
+                  <li>GitHub for code collaboration</li>
+                </ul>
               </div>
-              <div>
-                <label className="block mb-2 text-sm">Email</label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-portfolio-accent text-white"
-                  placeholder="Your email"
-                />
+              
+              <div className="text-center mt-6">
+                <a 
+                  href={`mailto:${contact.email}`}
+                  className="inline-block px-6 py-3 bg-portfolio-accent text-portfolio-primary font-medium rounded-md hover:bg-opacity-90 transition-all"
+                >
+                  Send Email Now
+                </a>
               </div>
-              <div>
-                <label className="block mb-2 text-sm">Message</label>
-                <textarea
-                  className="w-full px-4 py-2 rounded-md bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-portfolio-accent text-white h-32"
-                  placeholder="Your message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="px-6 py-3 bg-portfolio-accent text-portfolio-primary font-medium rounded-md hover:bg-opacity-90 transition-all"
-              >
-                Send Message
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
