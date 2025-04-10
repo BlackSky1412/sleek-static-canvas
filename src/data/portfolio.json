@@ -46,6 +46,39 @@
       "Adaptability"
     ]
   },
+  "timeline": {
+    "title": "Work Experience",
+    "description": "My professional journey in software development, showcasing my growth and experiences.",
+    "items": [
+      {
+        "period": "2020 - Present",
+        "startDate": "Jan 2020",
+        "endDate": "Present",
+        "title": "Senior Backend Developer",
+        "organization": "Tech Solutions Inc.",
+        "description": "Lead developer for enterprise-level applications with focus on performance optimization and scalability. Implemented microservices architecture that improved system response time by 40%.",
+        "technologies": ["Java", "Spring Boot", "Kubernetes", "MySQL", "Docker"]
+      },
+      {
+        "period": "2017 - 2020",
+        "startDate": "Mar 2017",
+        "endDate": "Dec 2019",
+        "title": "Backend Developer",
+        "organization": "Digital Innovations Co.",
+        "description": "Developed and maintained RESTful APIs for various web applications. Collaborated with frontend teams to ensure seamless integration of backend services.",
+        "technologies": ["C#", "ASP.NET", "Oracle", "Docker"]
+      },
+      {
+        "period": "2015 - 2017",
+        "startDate": "Jun 2015",
+        "endDate": "Feb 2017",
+        "title": "Junior Developer",
+        "organization": "WebDev Solutions",
+        "description": "Started as a full-stack developer with focus on backend systems. Contributed to multiple web applications and gained expertise in database optimization.",
+        "technologies": ["Java", "JavaScript", "MySQL", "HTML/CSS"]
+      }
+    ]
+  },
   "projects": {
     "title": "Projects",
     "description": "Here are some of the projects I've worked on. Each one has helped me grow as a developer.",
