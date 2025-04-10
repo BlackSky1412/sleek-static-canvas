@@ -111,7 +111,7 @@
           "technologies": ["Spring Boot", "MySQL", "Oracle"],
           "role": "Rewriting queries and modifying data types to be compatible with Oracle.",
           "github": "",
-          "image": "/src/assets/projects/WebsiteSellingCoffee.jpg"
+          "image": "/src/assets/projects/DatabaseMigration.jpg"
         }
       ]
     },
