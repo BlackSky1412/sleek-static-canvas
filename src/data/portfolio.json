@@ -28,8 +28,8 @@
       { "name": "C#", "level": 3, "category": "Backend" },
       { "name": "Java", "level": 3, "category": "Backend" },
       
-      { "name": "HTML5", "level": 22, "category": "Frontend" },
-      { "name": "CSS", "level": 22, "category": "Frontend" },
+      { "name": "HTML5", "level": 2, "category": "Frontend" },
+      { "name": "CSS", "level": 2, "category": "Frontend" },
       { "name": "JavaScript ", "level": 1, "category": "Frontend" },
       
       { "name": "Git/GitHub", "level": 2, "category": "Other" },
@@ -74,29 +74,45 @@
       "description": "Here are some of the projects I've worked on. Each one has helped me grow as a developer.",
       "items": [
         {
-          "title": "E-commerce Platform",
-          "description": "A full-featured online shopping platform with product catalog, shopping cart, and checkout functionality.",
-          "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
-          "role": "Lead Frontend Developer",
+          "title": "Search by face",
+          "description": "Searching for a face in a database using an input face involves.",
+          "technologies": ["Redis cloud", "Google Colab"],
+          "role": "Building the database, vectorizing images, and storing them in the database, comparing and searching for faces through vectors.",
           "github": "https://github.com/alexjohnson/ecommerce-platform",
-          "image": "/src/assets/projects/ecommerce.jpg"
+          "image": "/src/assets/projects/Searchbyface.jpg"
         },
         {
-          "title": "Task Management App",
-          "description": "A Kanban-style task management application with drag-and-drop functionality and team collaboration features.",
-          "technologies": ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-          "role": "Frontend Developer",
-          "github": "https://github.com/alexjohnson/task-app",
-          "image": "/src/assets/projects/taskapp.jpg"
+          "title": "Meditation app",
+          "description": "Relaxing music listening application.",
+          "technologies": ["Flutter", "Spring Boot", "Restful API", "MySQL"],
+          "role": "Build a server app use Restful API, change songs, fast forward, turn on and off.",
+          "github": "https://github.com/BlackSky1412/Meditation-app-flutter",
+          "image": "/src/assets/projects/MeditationApp.jpg"
         },
         {
-          "title": "Weather Dashboard",
-          "description": "A responsive weather application that provides real-time weather data and forecasts for cities worldwide.",
-          "technologies": ["JavaScript", "Weather API", "Charts.js", "CSS Grid"],
-          "role": "Solo Developer",
-          "github": "https://github.com/alexjohnson/weather-dashboard",
-          "image": "/src/assets/projects/weather.jpg"
-        }
+          "title": "Website Construction Project Management",
+          "description": "Building a construction project management system with features such as progress management, risk management, and inventory management.",
+          "technologies": ["Spring Boot", "MySQL"],
+          "role": "Designing the system, deploying to the database, developing management functions, subcontractor assignment, risk handling.",
+          "github": "https://github.com/BlackSky1412/QuanLyDuAnXayDung",
+          "image": "/src/assets/projects/WebsiteConstructionProjectManagement.jpg"
+        },
+        {
+          "title": "Website Selling Coffee",
+          "description": "Website selling coffee with functionalities for purchasing and adding to cart.",
+          "technologies": ["Spring Boot", "MySQL"],
+          "role": "Implementing Google account login, assigning function permissions for admin and user.",
+          "github": "",
+          "image": "/src/assets/projects/WebsiteSellingCoffee.jpg"
+        },
+        {
+          "title": "Database Migration",
+          "description": "Migrating the project's database from MySQL to Oracle.",
+          "technologies": ["Spring Boot", "MySQL", "Oracle"],
+          "role": "Rewriting queries and modifying data types to be compatible with Oracle.",
+          "github": "",
+          "image": "/src/assets/projects/WebsiteSellingCoffee.jpg"
+        }        
       ]
     },
     "inProgress": {
@@ -104,18 +120,10 @@
       "description": "These are projects I’m currently developing to sharpen my skills and explore new technologies.",
       "items": [
         {
-          "title": "Music Streaming App",
-          "description": "A cross-platform music player app allowing users to stream, browse, and manage playlists with a modern and intuitive interface.",
-          "technologies": ["Flutter", "Spring Boot", "MySQL", "Firebase Storage"],
-          "role": "Fullstack Developer",
-          "github": "https://github.com/blacksky1412/music-app",
-          "image": "/src/assets/projects/music-app.jpg"
-        },
-        {
           "title": "TikTok Clone App",
           "description": "A social video-sharing app clone with features like video upload, playback, likes, and comments.",
-          "technologies": ["Flutter", "Firebase", "FFmpeg"],
-          "role": "Mobile Developer",
+          "technologies": ["Flutter", "Firebase", "Spring Boot", "Mysql", "Microservice"],
+          "role": "Solo Developer",
           "github": "",
           "image": "/src/assets/projects/tiktok-clone.jpg"
         }
@@ -144,7 +152,7 @@
       },
       {
         "name": "Tiktok",
-        "url": "",
+        "url": "https://www.tiktok.com/@lifecodingofmark",
         "icon": "tiktok"
       }
     ]
