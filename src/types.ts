@@ -34,10 +34,15 @@ export interface Project {
   image: string;
 }
 
-export interface ProjectsData {
+export interface ProjectCategory {
   title: string;
   description: string;
   items: Project[];
+}
+
+export interface ProjectsData {
+  completed: ProjectCategory;
+  inProgress: ProjectCategory;
 }
 
 export interface TimelineItem {
