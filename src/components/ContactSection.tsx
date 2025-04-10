@@ -34,44 +34,44 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contact }) => {
 
   return (
     <section id="contact" className="py-16 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4 max-w-6xl">
+      <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         <h2 className="section-title text-center">{contact.title}</h2>
-        <p className="text-lg mb-12 text-center max-w-2xl mx-auto text-gray-700">{contact.description}</p>
+        <p className="text-lg mb-8 md:mb-12 text-center max-w-2xl mx-auto text-gray-700">{contact.description}</p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {/* Contact Info Card */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg transform hover:scale-[1.02] transition-transform duration-300 border border-gray-100">
-            <h3 className="text-2xl font-semibold mb-6 text-portfolio-primary">Get in Touch</h3>
+          <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg transform hover:scale-[1.02] transition-transform duration-300 border border-gray-100">
+            <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-portfolio-primary">Get in Touch</h3>
             
             {/* Email */}
-            <div className="flex items-center p-4 bg-gray-50 rounded-lg mb-6 animate-fade-in hover:bg-gray-100 transition-colors">
-              <div className="bg-portfolio-accent rounded-full p-3 mr-4 text-portfolio-primary">
-                <Mail className="h-6 w-6" />
+            <div className="flex items-center p-3 md:p-4 bg-gray-50 rounded-lg mb-4 md:mb-6 animate-fade-in hover:bg-gray-100 transition-colors">
+              <div className="bg-portfolio-accent rounded-full p-2 md:p-3 mr-3 md:mr-4 text-portfolio-primary">
+                <Mail className="h-5 w-5 md:h-6 md:w-6" />
               </div>
               <div>
                 <p className="text-sm text-gray-500">Email</p>
-                <a href={`mailto:${contact.email}`} className="text-portfolio-primary hover:underline font-medium">
+                <a href={`mailto:${contact.email}`} className="text-portfolio-primary hover:underline font-medium text-sm md:text-base">
                   {contact.email}
                 </a>
               </div>
             </div>
             
             {/* Social Links */}
-            <h4 className="text-xl font-medium mb-4 text-gray-800">Connect on Social Media</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <h4 className="text-lg md:text-xl font-medium mb-3 md:mb-4 text-gray-800">Connect on Social Media</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
               {contact.socials.map((social, index) => (
                 <a 
                   key={index} 
                   href={social.url} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center p-3 text-gray-700 hover:text-portfolio-primary bg-gray-50 rounded-lg hover:bg-gray-100 transition-all animate-fade-in"
+                  className="flex items-center p-2 md:p-3 text-gray-700 hover:text-portfolio-primary bg-gray-50 rounded-lg hover:bg-gray-100 transition-all animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="bg-white rounded-full p-2 mr-3 shadow-sm border border-gray-100">
+                  <div className="bg-white rounded-full p-2 mr-2 md:mr-3 shadow-sm border border-gray-100">
                     {renderIcon(social.icon)}
                   </div>
-                  <span className="font-medium">{social.name}</span>
+                  <span className="font-medium text-sm md:text-base">{social.name}</span>
                   <ExternalLink className="h-4 w-4 ml-auto" />
                 </a>
               ))}
@@ -79,35 +79,35 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contact }) => {
           </div>
           
           {/* Contact Form Visual */}
-          <div className="bg-portfolio-primary rounded-2xl shadow-lg p-8 text-white">
-            <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
+          <div className="bg-portfolio-primary rounded-2xl shadow-lg p-6 md:p-8 text-white">
+            <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6">Let's Connect</h3>
             
-            <div className="space-y-6">
-              <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-                <h4 className="text-xl font-medium mb-3 text-portfolio-accent">Availability</h4>
-                <p className="mb-4 text-white">I'm currently available for:</p>
-                <ul className="space-y-3">
+            <div className="space-y-4 md:space-y-6">
+              <div className="bg-white/10 p-4 md:p-6 rounded-xl backdrop-blur-sm">
+                <h4 className="text-lg md:text-xl font-medium mb-2 md:mb-3 text-white">Availability</h4>
+                <p className="mb-3 md:mb-4 text-white text-sm md:text-base">I'm currently available for:</p>
+                <ul className="space-y-2 md:space-y-3">
                   <li className="flex items-center">
                     <div className="h-2 w-2 rounded-full bg-portfolio-accent mr-2"></div>
-                    <span>Freelance projects</span>
+                    <span className="text-sm md:text-base">Freelance projects</span>
                   </li>
                   <li className="flex items-center">
                     <div className="h-2 w-2 rounded-full bg-portfolio-accent mr-2"></div>
-                    <span>Full-time opportunities</span>
+                    <span className="text-sm md:text-base">Full-time opportunities</span>
                   </li>
                   <li className="flex items-center">
                     <div className="h-2 w-2 rounded-full bg-portfolio-accent mr-2"></div>
-                    <span>Consulting work</span>
+                    <span className="text-sm md:text-base">Consulting work</span>
                   </li>
                 </ul>
               </div>
               
-              <div className="text-center mt-8">
+              <div className="text-center mt-6 md:mt-8">
                 <Button 
-                  className="px-8 py-6 bg-portfolio-accent text-portfolio-primary font-medium rounded-xl hover:bg-white transition-all text-lg h-auto"
+                  className="px-6 md:px-8 py-4 md:py-6 bg-portfolio-accent text-portfolio-primary font-medium rounded-xl hover:bg-white transition-all text-base md:text-lg h-auto"
                   onClick={() => window.location.href = `mailto:${contact.email}`}
                 >
-                  <Mail className="mr-2 h-5 w-5" />
+                  <Mail className="mr-2 h-4 w-4 md:h-5 md:w-5" />
                   Send Email
                 </Button>
               </div>
@@ -116,14 +116,14 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contact }) => {
         </div>
         
         {/* Social Links Bar */}
-        <div className="mt-16 flex flex-wrap justify-center gap-4">
+        <div className="mt-12 md:mt-16 flex flex-wrap justify-center gap-3 md:gap-4">
           {contact.socials.map((social, index) => (
             <a
               key={index}
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transform hover:scale-110 transition-all border border-gray-100 text-portfolio-primary hover:text-portfolio-accent"
+              className="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-md hover:shadow-lg transform hover:scale-110 transition-all border border-gray-100 text-portfolio-primary hover:text-portfolio-accent"
               aria-label={social.name}
             >
               {renderIcon(social.icon)}

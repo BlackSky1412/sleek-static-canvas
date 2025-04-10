@@ -42,7 +42,7 @@
   }
 
   body {
-    @apply bg-portfolio-background text-portfolio-foreground font-inter;
+    @apply bg-portfolio-background text-portfolio-foreground font-inter overflow-x-hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -50,7 +50,7 @@
   }
 
   .section-title {
-    @apply text-2xl md:text-3xl font-bold mb-6 text-portfolio-primary relative inline-block;
+    @apply text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-portfolio-primary relative inline-block;
   }
   
   .section-title::after {
@@ -63,7 +63,7 @@
   }
 
   .section {
-    @apply py-16;
+    @apply py-12 md:py-16;
   }
 
   .skill-bar {
@@ -80,5 +80,12 @@
 
   .project-card {
     @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300;
+  }
+}
+
+/* Additional responsive utilities */
+@media (max-width: 640px) {
+  .section-title::after {
+    width: 70%;
   }
 }
