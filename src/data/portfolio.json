@@ -78,7 +78,7 @@
           "description": "Searching for a face in a database using an input face involves.",
           "technologies": ["Redis cloud", "Google Colab"],
           "role": "Building the database, vectorizing images, and storing them in the database, comparing and searching for faces through vectors.",
-          "github": "https://github.com/alexjohnson/ecommerce-platform",
+          "github": "https://res.cloudinary.com/dfmofw2ww/image/upload/v1744286231/updating_v6dhak.jpg",
           "image": "https://res.cloudinary.com/dfmofw2ww/image/upload/v1744285004/Searchbyface_idkd9k.jpg"
         },
         {
@@ -102,7 +102,7 @@
           "description": "Website selling coffee with functionalities for purchasing and adding to cart.",
           "technologies": ["Spring Boot", "MySQL"],
           "role": "Implementing Google account login, assigning function permissions for admin and user.",
-          "github": "",
+          "github": "https://res.cloudinary.com/dfmofw2ww/image/upload/v1744286231/updating_v6dhak.jpg",
           "image": "https://res.cloudinary.com/dfmofw2ww/image/upload/v1744285005/WebsiteSellingCoffee_on0tfp.jpg"
         },
         {
@@ -124,7 +124,7 @@
           "description": "A social video-sharing app clone with features like video upload, playback, likes, and comments.",
           "technologies": ["Flutter", "Firebase", "Spring Boot", "Mysql", "Microservice"],
           "role": "Solo Developer",
-          "github": "",
+          "github": "https://res.cloudinary.com/dfmofw2ww/image/upload/v1744286231/updating_v6dhak.jpg",
           "image": "https://res.cloudinary.com/dfmofw2ww/image/upload/v1744285004/TikTokCloneApp_hlmxrw.jpg"
         }
       ]
