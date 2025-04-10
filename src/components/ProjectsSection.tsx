@@ -29,7 +29,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                 >
                   <div className="h-48 overflow-hidden">
                     <img 
-                      src={project.image ? project.image.replace('/src', '') : `https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3`}
+                      src={project.image || `https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3`}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
                     />
@@ -89,7 +89,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                 >
                   <div className="h-48 overflow-hidden">
                     <img 
-                      src={project.image ? project.image.replace('/src', '') : `https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3`}
+                      src={project.image || `https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3`}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
                     />
