@@ -35,7 +35,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ profile }) => {
             <div className="relative">
               <div className="w-64 h-64 mx-auto overflow-hidden rounded-full border-4 border-portfolio-accent">
                 <Avatar className="w-full h-full">
-                  <AvatarImage src={profile.avatar} alt={`${profile.name}'s profile picture`} className="w-full h-full object-cover" />
+                  <AvatarImage src={profile.avatar ? profile.avatar.replace('/src', '') : ''} alt={`${profile.name}'s profile picture`} className="w-full h-full object-cover" />
                   <AvatarFallback>{profile.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                 </Avatar>
               </div>
