@@ -84,8 +84,8 @@ const ContactSection: React.FC<ContactSectionProps> = ({ contact }) => {
             
             <div className="space-y-6">
               <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-                <h4 className="text-xl font-medium mb-3">Availability</h4>
-                <p className="mb-4">I'm currently available for:</p>
+                <h4 className="text-xl font-medium mb-3 text-portfolio-accent">Availability</h4>
+                <p className="mb-4 text-white">I'm currently available for:</p>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <div className="h-2 w-2 rounded-full bg-portfolio-accent mr-2"></div>
