@@ -1,3 +1,4 @@
+
 {
   "profile": {
     "name": "Trần Công Mạnh",
@@ -117,7 +118,7 @@
     },
     "inProgress": {
       "title": "Projects I'm Working On",
-      "description": "These are projects I’m currently developing to sharpen my skills and explore new technologies.",
+      "description": "These are projects I'm currently developing to sharpen my skills and explore new technologies.",
       "items": [
         {
           "title": "TikTok Clone App",
